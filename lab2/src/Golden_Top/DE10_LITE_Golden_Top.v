@@ -64,11 +64,25 @@ module DE10_LITE_Golden_Top(
 
 
 
+
+
 //=======================================================
 //  REG/WIRE declarations
 //=======================================================
 
-
+testCPU u0 (
+	.button_external_connection_export(KEY[1:0]),
+	.clk_clk(MAX10_CLK1_50),
+	.hex0_external_connection_export(HEX0),
+	.hex1_external_connection_export(HEX1),
+	.hex2_external_connection_export(HEX2),
+	.hex3_external_connection_export(HEX3),
+	.hex4_external_connection_export(HEX4),
+	.hex5_external_connection_export(HEX5),
+	.led_external_connection_export(LEDR[9:0]),
+	.reset_reset_n(1'b1),
+	.switch_external_connection_export(SW[9:0])
+);
 
 
 //=======================================================
